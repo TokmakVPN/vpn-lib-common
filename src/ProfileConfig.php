@@ -166,6 +166,14 @@ class ProfileConfig
     }
 
     /**
+     * @return string
+     */
+    public function tlsProtection()
+    {
+        return $this->config->requireString('tlsProtection', 'tls-crypt');
+    }
+
+    /**
      * @return bool
      */
     public function blockLan()
