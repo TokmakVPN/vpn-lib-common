@@ -124,6 +124,14 @@ class ProfileConfig
     {
         return $this->config->requireBool('enableAcl', false);
     }
+	
+	    /**
+     * @return bool
+     */
+    public function stunnel()
+    {
+        return $this->config->requireBool('EnableStunnel', true);
+    }
 
     /**
      * @return array
