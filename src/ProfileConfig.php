@@ -212,6 +212,22 @@ class ProfileConfig
     {
         return $this->config->requireArray('dnsDomainSearch', []);
     }
+	
+	/**
+     * @return array
+     */
+    public function AddonConfigServer()
+    {
+        return $this->config->requireArray('AddonConfigServer', []);
+    }
+	
+	/**
+     * @return array
+     */
+	public function AddonConfigClient()
+    {
+        return $this->config->requireArray('AddonConfigClient', []);
+    }
 
     /**
      * @deprecated
